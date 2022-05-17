@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@layer base {
+  body {
+    @apply list-none;
+  }
+}
+
+@layer components {
+  .max {
+    @apply w-full max-w-5xl m-auto;
+  }
+  .listItem {
+    @apply mb-3 text-[#003580] cursor-pointer;
+  }
+  .headerList {
+    @apply flex items-center gap-3;
+  }
+  .button {
+    @apply bg-[#0071c2] text-white font-medium border-0 p-3 cursor-pointer rounded;
+  }
+  .featuredItem {
+    @apply relative text-white rounded-lg overflow-hidden h-64 flex-1;
+  }
+  .lsOptionItem{
+    @apply flex justify-between mb-3 text-[#555] text-sm
+  }
+}
